@@ -1,0 +1,110 @@
+{
+  "program": "vault.aleo",
+  "structs": [
+    {
+      "path": [
+        "VaultAccount"
+      ],
+      "fields": [
+        {
+          "name": "token_program",
+          "ty": {
+            "Primitive": "Identifier"
+          }
+        },
+        {
+          "name": "user",
+          "ty": {
+            "Primitive": "Address"
+          }
+        }
+      ]
+    }
+  ],
+  "records": [],
+  "mappings": [
+    {
+      "name": "account_balance",
+      "key": {
+        "Struct": {
+          "path": [
+            "VaultAccount"
+          ],
+          "program": "vault.aleo"
+        }
+      },
+      "value": {
+        "Primitive": {
+          "UInt": "U128"
+        }
+      }
+    }
+  ],
+  "storage_variables": [],
+  "functions": [
+    {
+      "name": "deposit",
+      "is_final": true,
+      "inputs": [
+        {
+          "name": "token_program",
+          "ty": {
+            "Plaintext": {
+              "Primitive": "Identifier"
+            }
+          },
+          "mode": "None"
+        },
+        {
+          "name": "amount",
+          "ty": {
+            "Plaintext": {
+              "Primitive": {
+                "UInt": "U128"
+              }
+            }
+          },
+          "mode": "None"
+        }
+      ],
+      "outputs": [
+        {
+          "ty": "Final",
+          "mode": "None"
+        }
+      ]
+    },
+    {
+      "name": "withdraw",
+      "is_final": true,
+      "inputs": [
+        {
+          "name": "token_program",
+          "ty": {
+            "Plaintext": {
+              "Primitive": "Identifier"
+            }
+          },
+          "mode": "None"
+        },
+        {
+          "name": "amount",
+          "ty": {
+            "Plaintext": {
+              "Primitive": {
+                "UInt": "U128"
+              }
+            }
+          },
+          "mode": "None"
+        }
+      ],
+      "outputs": [
+        {
+          "ty": "Final",
+          "mode": "None"
+        }
+      ]
+    }
+  ]
+}

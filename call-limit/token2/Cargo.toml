@@ -1,0 +1,15 @@
+
+[package]
+name = "token2_bindings"
+version = "0.1.0"
+edition = "2024"
+[lib]
+name = "token2_bindings"
+path = "lib.rs"
+
+[dependencies]
+leo-bindings = { git = "https://github.com/henrikkv/leo-bindings" }
+
+# BEGIN IMPORTS
+# credits_bindings = { git = "https://github.com/henrikkv/leo-bindings" }
+# END IMPORTS

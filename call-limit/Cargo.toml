@@ -1,0 +1,12 @@
+[package]
+name = "call-limit"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+token1_bindings = { version = "0.1.0", path = "token1" }
+token2_bindings = { version = "0.1.0", path = "token2" }
+vault_bindings = { version = "0.1.0", path = "vault" }
+
+[dev-dependencies]
+leo-bindings = { git = "https://github.com/henrikkv/leo-bindings" }

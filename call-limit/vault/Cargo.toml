@@ -1,0 +1,15 @@
+
+[package]
+name = "vault_bindings"
+version = "0.1.0"
+edition = "2024"
+[lib]
+name = "vault_bindings"
+path = "lib.rs"
+
+[dependencies]
+leo-bindings = { git = "https://github.com/henrikkv/leo-bindings" }
+
+# BEGIN IMPORTS
+# credits_bindings = { git = "https://github.com/henrikkv/leo-bindings" }
+# END IMPORTS
