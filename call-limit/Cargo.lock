@@ -332,9 +332,9 @@ dependencies = [
 
 [[package]]
 name = "cc"
-version = "1.2.60"
+version = "1.2.61"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "43c5703da9466b66a946814e1adf53ea2c90f10063b86290cc9eb67ce3478a20"
+checksum = "d16d90359e986641506914ba71350897565610e87ce0ad9e6f28569db3dd5c6d"
 dependencies = [
  "find-msvc-tools",
  "jobserver",
@@ -1597,7 +1597,7 @@ dependencies = [
 [[package]]
 name = "leo-bindings"
 version = "0.2.0"
-source = "git+https://github.com/henrikkv/leo-bindings#4d8a3d22992eddd39b5f1fa83e1765b970d7589e"
+source = "git+https://github.com/henrikkv/leo-bindings#4325334b268436fb0018569b0383bc78281297e7"
 dependencies = [
  "aleo-std",
  "anyhow",
@@ -1632,7 +1632,7 @@ dependencies = [
 [[package]]
 name = "leo-bindings-core"
 version = "0.2.0"
-source = "git+https://github.com/henrikkv/leo-bindings#4d8a3d22992eddd39b5f1fa83e1765b970d7589e"
+source = "git+https://github.com/henrikkv/leo-bindings#4325334b268436fb0018569b0383bc78281297e7"
 dependencies = [
  "aleo-std",
  "anyhow",
@@ -1654,7 +1654,7 @@ dependencies = [
 [[package]]
 name = "leo-bindings-macro"
 version = "0.2.0"
-source = "git+https://github.com/henrikkv/leo-bindings#4d8a3d22992eddd39b5f1fa83e1765b970d7589e"
+source = "git+https://github.com/henrikkv/leo-bindings#4325334b268436fb0018569b0383bc78281297e7"
 dependencies = [
  "leo-abi-types",
  "leo-bindings-core",
@@ -1667,7 +1667,7 @@ dependencies = [
 [[package]]
 name = "leo-bindings-sdk"
 version = "0.2.0"
-source = "git+https://github.com/henrikkv/leo-bindings#4d8a3d22992eddd39b5f1fa83e1765b970d7589e"
+source = "git+https://github.com/henrikkv/leo-bindings#4325334b268436fb0018569b0383bc78281297e7"
 dependencies = [
  "aleo-std",
  "anyhow",
@@ -2679,9 +2679,9 @@ dependencies = [
 
 [[package]]
 name = "rustls-pki-types"
-version = "1.14.0"
+version = "1.14.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "be040f8b0a225e40375822a563fa9524378b9d63112f53e19ffff34df5d33fdd"
+checksum = "30a7197ae7eb376e574fe940d068c30fe0462554a3ddbe4eca7838e049c937a9"
 dependencies = [
  "web-time",
  "zeroize",
@@ -2938,7 +2938,7 @@ dependencies = [
 [[package]]
 name = "snarkvm"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "anyhow",
  "dotenvy",
@@ -2979,7 +2979,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-algorithms"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "aleo-std",
  "anyhow",
@@ -3034,7 +3034,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-circuit"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "snarkvm-circuit-account 4.6.0",
  "snarkvm-circuit-algorithms 4.6.0",
@@ -3063,7 +3063,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-circuit-account"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "snarkvm-circuit-network 4.6.0",
  "snarkvm-circuit-types 4.6.0",
@@ -3084,7 +3084,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-circuit-algorithms"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "snarkvm-circuit-types 4.6.0",
  "snarkvm-console-algorithms 4.6.0",
@@ -3105,7 +3105,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-circuit-collections"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "snarkvm-circuit-algorithms 4.6.0",
  "snarkvm-circuit-types 4.6.0",
@@ -3126,7 +3126,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-circuit-environment"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "anyhow",
  "indexmap",
@@ -3167,7 +3167,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-circuit-environment-witness"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 
 [[package]]
 name = "snarkvm-circuit-environment-witness"
@@ -3178,7 +3178,7 @@ checksum = "040fd8ff056efea11fef93fcef8466a40d0320dd508267640ca90b5a2c737218"
 [[package]]
 name = "snarkvm-circuit-network"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "snarkvm-circuit-algorithms 4.6.0",
  "snarkvm-circuit-collections 4.6.0",
@@ -3201,7 +3201,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-circuit-program"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "snarkvm-circuit-account 4.6.0",
  "snarkvm-circuit-algorithms 4.6.0",
@@ -3230,7 +3230,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-circuit-types"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "snarkvm-circuit-environment 4.6.0",
  "snarkvm-circuit-types-address 4.6.0",
@@ -3261,7 +3261,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-circuit-types-address"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "snarkvm-circuit-environment 4.6.0",
  "snarkvm-circuit-types-boolean 4.6.0",
@@ -3288,7 +3288,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-circuit-types-boolean"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "snarkvm-circuit-environment 4.6.0",
  "snarkvm-console-types-boolean 4.6.0",
@@ -3307,7 +3307,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-circuit-types-field"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "snarkvm-circuit-environment 4.6.0",
  "snarkvm-circuit-types-boolean 4.6.0",
@@ -3328,7 +3328,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-circuit-types-group"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "snarkvm-circuit-environment 4.6.0",
  "snarkvm-circuit-types-boolean 4.6.0",
@@ -3353,7 +3353,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-circuit-types-integers"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "snarkvm-circuit-environment 4.6.0",
  "snarkvm-circuit-types-boolean 4.6.0",
@@ -3378,7 +3378,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-circuit-types-scalar"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "snarkvm-circuit-environment 4.6.0",
  "snarkvm-circuit-types-boolean 4.6.0",
@@ -3401,7 +3401,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-circuit-types-string"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "snarkvm-circuit-environment 4.6.0",
  "snarkvm-circuit-types-boolean 4.6.0",
@@ -3426,7 +3426,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-console"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "snarkvm-console-account 4.6.0",
  "snarkvm-console-algorithms 4.6.0",
@@ -3453,7 +3453,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-account"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "bs58",
  "snarkvm-console-network 4.6.0",
@@ -3476,7 +3476,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-algorithms"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "blake2s_simd",
  "hex",
@@ -3509,7 +3509,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-collections"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "aleo-std",
  "parking_lot 0.12.5",
@@ -3536,7 +3536,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-network"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "anyhow",
  "enum-iterator",
@@ -3577,7 +3577,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-network-environment"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "anyhow",
  "bech32",
@@ -3614,7 +3614,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-program"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "enum-iterator",
  "enum_index",
@@ -3657,7 +3657,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-types"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "snarkvm-console-network-environment 4.6.0",
  "snarkvm-console-types-address 4.6.0",
@@ -3688,7 +3688,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-types-address"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "snarkvm-console-network-environment 4.6.0",
  "snarkvm-console-types-boolean 4.6.0",
@@ -3711,7 +3711,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-types-boolean"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "snarkvm-console-network-environment 4.6.0",
 ]
@@ -3728,7 +3728,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-types-field"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "snarkvm-console-network-environment 4.6.0",
  "snarkvm-console-types-boolean 4.6.0",
@@ -3749,7 +3749,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-types-group"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "snarkvm-console-network-environment 4.6.0",
  "snarkvm-console-types-boolean 4.6.0",
@@ -3772,7 +3772,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-types-integers"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "snarkvm-console-network-environment 4.6.0",
  "snarkvm-console-types-boolean 4.6.0",
@@ -3795,7 +3795,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-types-scalar"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "snarkvm-console-network-environment 4.6.0",
  "snarkvm-console-types-boolean 4.6.0",
@@ -3818,7 +3818,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-types-string"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "snarkvm-console-network-environment 4.6.0",
  "snarkvm-console-types-boolean 4.6.0",
@@ -3841,7 +3841,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-curves"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "rand 0.8.6",
  "rustc_version",
@@ -3868,7 +3868,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-fields"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "aleo-std",
  "anyhow",
@@ -3903,7 +3903,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-ledger"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "aleo-std",
  "anyhow",
@@ -3962,7 +3962,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-ledger-authority"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "anyhow",
  "rand 0.8.6",
@@ -3987,7 +3987,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-ledger-block"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "anyhow",
  "indexmap",
@@ -4034,7 +4034,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-ledger-committee"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "indexmap",
  "rayon",
@@ -4059,7 +4059,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-ledger-narwhal"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "snarkvm-ledger-narwhal-batch-certificate 4.6.0",
  "snarkvm-ledger-narwhal-batch-header 4.6.0",
@@ -4086,7 +4086,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-ledger-narwhal-batch-certificate"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "indexmap",
  "rayon",
@@ -4113,7 +4113,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-ledger-narwhal-batch-header"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "indexmap",
  "rayon",
@@ -4138,7 +4138,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-ledger-narwhal-data"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "bytes",
  "serde_json",
@@ -4161,7 +4161,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-ledger-narwhal-subdag"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "indexmap",
  "rayon",
@@ -4192,7 +4192,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-ledger-narwhal-transmission"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "bytes",
  "serde_json",
@@ -4219,7 +4219,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-ledger-narwhal-transmission-id"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "snarkvm-console 4.6.0",
  "snarkvm-ledger-puzzle 4.6.0",
@@ -4238,7 +4238,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-ledger-puzzle"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "aleo-std",
  "anyhow",
@@ -4277,7 +4277,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-ledger-puzzle-epoch"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "aleo-std",
  "anyhow",
@@ -4322,7 +4322,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-ledger-query"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -4357,7 +4357,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-ledger-store"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "aleo-std-storage",
  "anyhow",
@@ -4408,7 +4408,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-parameters"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "aleo-std",
  "anyhow",
@@ -4453,7 +4453,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-synthesizer"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "aleo-std",
  "anyhow",
@@ -4522,7 +4522,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-synthesizer-error"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "anyhow",
  "snarkvm-circuit-environment 4.6.0",
@@ -4545,7 +4545,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-synthesizer-process"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "aleo-std",
  "colored",
@@ -4598,7 +4598,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-synthesizer-program"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "enum-iterator",
  "indexmap",
@@ -4641,7 +4641,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-synthesizer-snark"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "bincode",
  "serde_json",
@@ -4668,7 +4668,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-utilities"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "aleo-std",
  "anyhow",
@@ -4715,7 +4715,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-utilities-derives"
 version = "4.6.0"
-source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#57016559770b36cc85f995f95a717bd01fc62322"
+source = "git+https://github.com/henrikkv/snarkVM?branch=leo-bindings#3d46d4ec75a6a3f64b1e9958cbf56f95d75ae7e7"
 dependencies = [
  "proc-macro2",
  "quote 1.0.45",

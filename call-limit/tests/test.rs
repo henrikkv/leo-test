@@ -1,55 +1,56 @@
 use leo_bindings::leo_bindings_sdk::{Account, Client, LocalVM, NetworkVm, VMManager};
-use leo_bindings::snarkvm::prelude::{IdentifierLiteral, ProgramID, TestnetV0};
+use leo_bindings::snarkvm::console::program::ProgramID;
+use leo_bindings::snarkvm::prelude::TestnetV0;
 use token1_bindings::token1::Token1Aleo;
 use token2_bindings::token2::Token2Aleo;
 use vault_bindings::vault::VaultAleo;
 
-const ENDPOINT: &str = "http://localhost:3030";
-
 #[test]
 fn test_vault_sim() {
     leo_bindings::utils::init_test_logger();
-    let alice: Account<TestnetV0> = Account::dev_account(0).unwrap();
     let vm = LocalVM::new().unwrap();
-    run_vault_tests(vm, &alice);
+    run_vault_tests(vm);
 }
 
 #[test]
 fn test_vault_net() {
     leo_bindings::utils::init_test_logger();
-    let alice: Account<TestnetV0> = Account::dev_account(0).unwrap();
-    let client = Client::new(ENDPOINT, None).unwrap();
+    let client = Client::new("http://localhost:3030", None).unwrap();
     let vm = NetworkVm::new(&client).unwrap();
-    run_vault_tests(vm, &alice);
+    run_vault_tests(vm);
 }
 
-fn run_vault_tests<V: VMManager<TestnetV0> + Clone>(vm: V, alice: &Account<TestnetV0>) {
-    let token1 = Token1Aleo::new(alice, vm.clone()).unwrap();
-    let token2 = Token2Aleo::new(alice, vm.clone()).unwrap();
-    let vault = VaultAleo::new(alice, vm).unwrap();
+fn run_vault_tests<V: VMManager<TestnetV0>>(vm: V) {
+    let alice: Account<TestnetV0> = Account::dev_account(0).unwrap();
+    let token1 = Token1Aleo::new(&alice, vm.clone()).unwrap();
+    let token2 = Token2Aleo::new(&alice, vm.clone()).unwrap();
+    let vault = VaultAleo::new(&alice, vm).unwrap();
 
-    let token1_id = IdentifierLiteral::<TestnetV0>::new("token1").unwrap();
-    let token2_id = IdentifierLiteral::<TestnetV0>::new("token2").unwrap();
     let deposit_amount: u128 = 1_000_000;
     let reward_amount: u128 = 10_000_000;
 
-    let vault_address = "vault.aleo"
-        .parse::<ProgramID<TestnetV0>>()
-        .unwrap()
-        .to_address()
-        .unwrap();
-
     // token1 works by itself
     token1
-        .mint_public(alice, alice.address(), deposit_amount + reward_amount)
+        .mint_public(&alice, alice.address(), deposit_amount + reward_amount)
         .unwrap();
     token1
-        .transfer_public(alice, vault_address, reward_amount)
+        .transfer_public(
+            &alice,
+            ProgramID::try_from("vault.aleo")
+                .unwrap()
+                .to_address()
+                .unwrap(),
+            reward_amount,
+        )
         .unwrap();
 
     // token1 also works in vault: deposit, withdraw, receive tokens + reward
-    vault.deposit(alice, token1_id, deposit_amount).unwrap();
-    vault.withdraw(alice, token1_id, deposit_amount).unwrap();
+    vault
+        .deposit(&alice, "token1".try_into().unwrap(), deposit_amount)
+        .unwrap();
+    vault
+        .withdraw(&alice, "token1".try_into().unwrap(), deposit_amount)
+        .unwrap();
 
     let alice_balance = token1.get_balance(alice.address()).unwrap();
     assert_eq!(alice_balance, deposit_amount + 1_000_000u128);
@@ -57,15 +58,17 @@ fn run_vault_tests<V: VMManager<TestnetV0> + Clone>(vm: V, alice: &Account<Testn
     // Case 2: token2.transfer_public works on its own, but withdraw fails
     // because the reward call pushes the total transitions over the limit.
     token2
-        .mint_public(alice, alice.address(), deposit_amount)
+        .mint_public(&alice, alice.address(), deposit_amount)
         .unwrap();
     token2
-        .transfer_public(alice, alice.address(), deposit_amount)
+        .transfer_public(&alice, alice.address(), deposit_amount)
         .unwrap();
 
-    vault.deposit(alice, token2_id, deposit_amount).unwrap();
+    vault
+        .deposit(&alice, "token2".try_into().unwrap(), deposit_amount)
+        .unwrap();
 
-    let result = vault.withdraw(alice, token2_id, deposit_amount);
+    let result = vault.withdraw(&alice, "token2".try_into().unwrap(), deposit_amount);
     dbg!(&result);
     assert!(result.is_err());
 }
