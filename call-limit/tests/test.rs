@@ -1,5 +1,4 @@
 use leo_bindings::leo_bindings_sdk::{Account, Client, LocalVM, NetworkVm, VMManager};
-use leo_bindings::snarkvm::console::program::ProgramID;
 use leo_bindings::snarkvm::prelude::TestnetV0;
 use token1_bindings::token1::Token1Aleo;
 use token2_bindings::token2::Token2Aleo;
@@ -34,22 +33,15 @@ fn run_vault_tests<V: VMManager<TestnetV0>>(vm: V) {
         .mint_public(&alice, alice.address(), deposit_amount + reward_amount)
         .unwrap();
     token1
-        .transfer_public(
-            &alice,
-            ProgramID::try_from("vault.aleo")
-                .unwrap()
-                .to_address()
-                .unwrap(),
-            reward_amount,
-        )
+        .transfer_public(&alice, vault.address(), reward_amount)
         .unwrap();
 
     // token1 also works in vault: deposit, withdraw, receive tokens + reward
     vault
-        .deposit(&alice, "token1".try_into().unwrap(), deposit_amount)
+        .deposit(&alice, token1.identifier(), deposit_amount)
         .unwrap();
     vault
-        .withdraw(&alice, "token1".try_into().unwrap(), deposit_amount)
+        .withdraw(&alice, token1.identifier(), deposit_amount)
         .unwrap();
 
     let alice_balance = token1.get_balance(alice.address()).unwrap();
@@ -65,10 +57,10 @@ fn run_vault_tests<V: VMManager<TestnetV0>>(vm: V) {
         .unwrap();
 
     vault
-        .deposit(&alice, "token2".try_into().unwrap(), deposit_amount)
+        .deposit(&alice, token2.identifier(), deposit_amount)
         .unwrap();
 
-    let result = vault.withdraw(&alice, "token2".try_into().unwrap(), deposit_amount);
+    let result = vault.withdraw(&alice, token2.identifier(), deposit_amount);
     dbg!(&result);
     assert!(result.is_err());
 }
